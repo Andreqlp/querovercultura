@@ -1,6 +1,6 @@
 /** Default settings **/
 var Settings = {
-    projectName: 'MINC Butter',
+    projectName: 'Quero ver Cultura',
     projectUrl: 'http://butterproject.org',
     projectTwitter: 'butterproject',
     projectFacebook: 'ButterProjectOrg',
@@ -37,7 +37,7 @@ Settings.chosenPlayer = 'local';
 
 // Advanced UI
 Settings.alwaysOnTop = false;
-Settings.theme = 'Official_-_Dark_theme';
+Settings.theme = 'Minc_theme';
 Settings.ratingStars = true; //trigger on click in details
 Settings.startScreen = 'Movies';
 Settings.lastTab = '';
