@@ -2,7 +2,7 @@
 (function (App) {
     'use strict';
 
-    var apiUrl = 'http://butter.vodo.net/popcorn',
+    var apiUrl = 'http://querovercultura.gov.br/catalogo',
         db = new Datastore();
 
     function Vodo() {
@@ -10,7 +10,6 @@
             return new Vodo();
         }
 
-        this.name = 'Vodo';
         App.Providers.Generic.call(this);
     }
     inherits(Vodo, App.Providers.Generic);
@@ -203,5 +202,5 @@
         return Q(old_data);
     };
 
-    App.Providers.install(Vodo);
+    App.Providers.Vodo = Vodo;
 })(window.App);
