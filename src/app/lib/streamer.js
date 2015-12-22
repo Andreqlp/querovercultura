@@ -462,11 +462,13 @@
             si.set('type', 'video/mp4');
             si.set('device', model.get('device'));
 
-            si.set('src', [{
-                type: 'video/mp4',
-                src: url
-            }]);
-            App.vent.trigger('stream:ready', si);
+	    si.set('src', [
+		{ type: 'video/mp4',
+		  src: url },
+		{ type: 'video/mp4',
+		  src: url.substring(7).replace('?', '_')}
+	    ]);
+	    App.vent.trigger('stream:ready', si);
         },
 
         stop: function () {
